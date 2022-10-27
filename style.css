@@ -1,0 +1,35 @@
+
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+header, main, footer, nav, article, section{
+    border: 1px solid black;
+    padding: 10px;
+}
+.kiskepek{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+@media screen and (max-width: 800px) {
+    .kiskepek{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 400px) {
+    .kiskepek{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
+  }
+.jobb a{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
